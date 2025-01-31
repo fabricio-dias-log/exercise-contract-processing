@@ -1,4 +1,6 @@
-﻿namespace ExerciseContractProcessing.Entities;
+﻿using System.Globalization;
+
+namespace ExerciseContractProcessing.Entities;
 
 public class Installments
 {
@@ -13,6 +15,6 @@ public class Installments
 
     public override string ToString()
     {
-        return $"{Date} - {Value}";
+        return $"{Date} - {Value.ToString("F2", CultureInfo.InvariantCulture)}";
     }
 }
