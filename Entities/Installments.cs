@@ -10,4 +10,9 @@ public class Installments
         Value = value;
         Date = date;
     }
+
+    public override string ToString()
+    {
+        return $"{Date} - {Value}";
+    }
 }
