@@ -6,6 +6,7 @@ public class Contract
     public DateOnly Date { get; set; }
     public double Value { get; set; }
 
+    public List<Installments> InstallmentsList = new List<Installments>();
 
 
     public Contract(int number, DateOnly date, double value)
